@@ -41,9 +41,9 @@ if ($pil == "1") {
 } else if ($pil == "2") {
 
     $hmsc = shell_exec('curl https://raw.githubusercontent.com/EddieKidiw/HMSC/main/Linux/Termux/aarch64/php7.4/zts/hmsc.so --output hmsc.so');
-    $cp_hmsc = shell_exec('cp hmsc.so /data/data/com.termux/files/usr/lib/php/7.4.33/modules/hmsc.so');
+    $cp_hmsc = shell_exec('cp hmsc.so /data/data/com.termux/files/usr/lib/php/7.4/modules/hmsc.so');
     $getIni = shell_exec('curl https://raw.githubusercontent.com/ipkzone/axisnet/main/php.ini --output php.ini');
-    $cpini = shell_exec('cp php.ini /data/data/com.termux/files/usr/lib/php/7.4.33');
+    $cpini = shell_exec('cp php.ini /data/data/com.termux/files/usr/lib/php/7.4');
 
     echo " {$Green}➤{$White} Installed lib hmsc.so aarch64 PHP 7\n";
 } else if ($pil == "3") {
